@@ -4,6 +4,7 @@ import Login from "./routes/Login";
 import Home from "./routes/Home";
 import Navbar from "./components/Navbar";
 import RequireAuth from './components/RequireAuth';
+import Register from './routes/Register';
 
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
        <Home />
      </RequireAuth>
    }/>
-   <Route path="/login" element={<Login/>}></Route>
+    <Route path="/login" element={<Login />}/>
+    <Route path="/register" element={<Register />}/>
   </Routes>
     </>
   );
